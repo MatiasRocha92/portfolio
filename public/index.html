@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style/estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Matias</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>MATIAS ROCHA</h1>
+            <h2>Desarrollador Web - Brigadista Forestal</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Matias Rocha.</span> Me dedico al desarrollo web como asi tambien al combate de incendios forestales. soy una persona proactiva, de rapido aprendizaje, lógica e intuitiva.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            11-12-1992
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            221 3540565 / 223  5304454
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            maty.comu@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.matiasrocha.com
+                        </li>
+                        <li>
+                            <strong>Residencia</strong>
+                            Santo Tome, Santa Fe, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <a download="CV Matias Rocha" href="./download/CV Matias Rocha.pdf"><span class="overlay"></span></a>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Ingles</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Secundario Completo</h4>
+                        <span class="casa">E.E.M. Belgrano, Santa Fe</span>
+                        <span class="fecha">2011</span>
+                        <p>Recibido en tiempo y forma con el titulo de Bachillerato</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnico en Seguiridad Publica</h4>
+                        <span class="casa">Escuela Juan Vucetich</span>
+                        <span class="fecha">2014</span>
+                        <p>Titulo de Tecnico en Seguridad publica y grado de Oficial Subayudante en la Policia de la Provincia de Buenos Aires</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Brigadista Forestal</h4>
+                        <span class="casa">S.N.M.F</span>
+                        <span class="fecha">2018</span>
+                        <p>Certificacion (Servicio Nacional del Manejo del Fuego) como combatiente de incendios forestales</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Comando de Incidentes</h4>
+                        <span class="casa">U.S.A.I.D</span>
+                        <span class="fecha">2019</span>
+                        <p>Certificacion del curso Comando de Incidentes dictado por United States Agency International Development</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso de Conduccion de Vehiculo Pesado</h4>
+                        <span class="casa">Vialidad Nacional</span>
+                        <span class="fecha">2019</span>
+                        <p>Certificacion del curso de conduccion de camion 6x6 sobre medanos de arena</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Mantenimiento de Herramientas de Zapa</h4>
+                        <span class="casa">S.N.M.F</S></span>
+                        <span class="fecha">2019</span>
+                        <p>Certificacion del curso mantenimiento de herramientas de zapa (herramientas aplicadas a incendios forestales)</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Psicologia en la emergencia</h4>
+                        <span class="casa">SAME</S></span>
+                        <span class="fecha">2020</span>
+                        <p>Curso de Psicologia en todo tipo de emergencias</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Python</h4>
+                        <span class="casa">Coder House</S></span>
+                        <span class="fecha">2020</span>
+                        <p>Curso de lenguaje de programacion Python</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>RCP y Primeros Auxilios</h4>
+                        <span class="casa">SAME</S></span>
+                        <span class="fecha">2021</span>
+                        <p>Curso RCP y Primeros Auxilios avanzados dictado por el SAME (C.A.B.A)</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Web Developer</h4>
+                        <span class="casa">Coder House</S></span>
+                        <span class="fecha">2022</span>
+                        <p>Certificacion de curso de Desarrollador Web</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Escribiente Sumarial</h4>
+                        <span class="casa">Ministerio de Seguridad, Bs. AS.</span>
+                        <span class="fecha">2014 - 2015</span>
+                        <p>Escribiente de sumarios penales (hechos delictivos) con personal policial a cargo (70 efectivos) en la localidad de Lanus, Bs. As.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Escribiente Sumarial</h4>
+                        <span class="casa">Ministerio de Seguridad, Bs. AS.</span>
+                        <span class="fecha">2016 - 2017</span>
+                        <p>Escribiente de sumarios penales (hechos delictivos) con personal policial a cargo (30 efectivos) y ayudante de Fiscal en fiscalias penales (delitos complejos y flagrancia) en la localidad de La Plata, Bs. As.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Chofer y personal operativo</h4>
+                        <span class="casa">Ministerio de Seguridad, Bs. AS.</span>
+                        <span class="fecha">2017</span>
+                        <p>Chofer y persobal operativo en la Direccion de Defensa Civil de Bs. As. Conduccion de camionetas 4x4 en terrenos peligrosos (inundaciones, incendios, etc.)</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Brigadista Forestal</h4>
+                        <span class="casa">Ministerio de Seguridad, Bs. AS.</span>
+                        <span class="fecha">2017</span>
+                        <p>Personal operativo como Brigadista Forestal en Subsecretaria de Emergencias, Bs. As.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Encargado</h4>
+                        <span class="casa">Ministerio de Seguridad, Bs. AS.</span>
+                        <span class="fecha">2017</span>
+                        <p>Encargado de centro de comando y evacuacion de civiles en la localidad de Pilar y Esteban Etcheverria, Bs. As.  (inundaciones)</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Operatividad</h4>
+                        <span class="casa">Ministerio de Seguridad, Bs. AS.</span>
+                        <span class="fecha">2017-2018</span>
+                        <p>Colaboracion con Bomberos de Sierra de la Ventana, Bs. As. (2 meses y medio); jefe de cuadrilla en incendio forestal en dicha localidad</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Operatividad</h4>
+                        <span class="casa">Ministerio de Seguridad, Bs. AS.</span>
+                        <span class="fecha">2018-2019</span>
+                        <p>Colaboracion de 2 meses y medio (Diciembre, Enero y Febrero) en emerencias con Bomberos Voluntarios de Balneario San Cayetano, cumpliendo con varios servicios en dicha localidad</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Operatividad</h4>
+                        <span class="casa">Ministerio de Seguridad, Bs. AS.</span>
+                        <span class="fecha">2019-2020</span>
+                        <p>Colaboracion de 2 meses y medio (Diciembre, enero y febrero) en emergencias con Bomberos Voluntarios de Santa Clara del Mar y Villa Gesell, Bs. As. <br>
+                        - Observador Aereo en incendio forestal en Villa Gesell, Bs. As.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Operatividad</h4>
+                        <span class="casa">Ministerio de Seguridad, Bs. AS.</span>
+                        <span class="fecha">2020-2021</span>
+                        <p>- Recabado de informacion sobre el terreno (utilizando drones con camaras multiespectrales para medir la humedad del suelo y el riesgo de magnitud de un incendio debido a la densidad de arbusto, arboles, etc., mas precisamente la cantidad de carga de fuego) de toda la costa atlantica de la provincia de Buenos Aores para futuros planeamientos sobre tales incidentes (primera vez que se hizo en mencionada provincia) 
+                        <br>
+                        - Observador Aereo en incendio forestal en la localidad de Tandil, Bs. As.
+                        <br>
+                        - Observador Aereo en incendio forestal en la loclidad de San Nicolas de los Arroyos, Bs. As. y Nogoya, Entre Rios (delta del Rio Parana)
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Operatividad</h4>
+                        <span class="casa">Ministerio de Seguridad, Bs. AS.</span>
+                        <span class="fecha">2022</span>
+                        <p>- Jefe de Cuadrilla y observador aereo en incendio forestal (interface) en las localidades de Santo Tome, Esteros del Ibera e Ituzaingo en la provincia de Corrientes
+                        <br>
+                        - Encargado de Centro de Comando (centro de despacho, procesamiento de informacion y predicciones de comportamiento del incendio), como asi tambien nexo interprovincial (Bs. As. y Entre Rios) en la loclidad de San Nicolas de los Arroyos (incendios forestales en el delta del Rio Parana)
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <form class="col" action="https://formsubmit.co/maty.comu@email.com" method="POST">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="email" placeholder="Dirección de correo" name="email">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="email" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button type="submit" class="btn btn-primary">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Santo Tome, Santa Fe
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Telefonos: <br> 221 - 3540565 <br> 223 - 5304454
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: maty.comu@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
